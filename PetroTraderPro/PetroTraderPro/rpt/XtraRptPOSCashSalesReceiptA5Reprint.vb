@@ -1,0 +1,3 @@
+﻿Public Class XtraRptPOSCashSalesReceiptA5Reprint
+
+End Class

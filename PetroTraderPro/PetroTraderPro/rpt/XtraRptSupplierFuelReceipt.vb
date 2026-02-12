@@ -1,0 +1,3 @@
+﻿Public Class XtraRptSupplierFuelReceipt
+
+End Class

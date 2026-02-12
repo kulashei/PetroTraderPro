@@ -1,0 +1,3 @@
+﻿Public Class XtraRptAccountTrantractions
+
+End Class

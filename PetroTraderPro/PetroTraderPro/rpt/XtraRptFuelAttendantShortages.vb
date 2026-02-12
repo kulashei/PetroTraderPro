@@ -1,0 +1,3 @@
+﻿Public Class XtraRptFuelAttendantShortages
+
+End Class

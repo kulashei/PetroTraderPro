@@ -1,0 +1,3 @@
+﻿Public Class XtraRptPOSSupplierReceipt
+
+End Class

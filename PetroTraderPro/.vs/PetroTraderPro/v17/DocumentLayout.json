@@ -1,0 +1,183 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\SHAM\\Desktop\\DEV SOURCE\\PetroTraderPro\\PetroTraderPro\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{CBA09872-8D77-41D2-BF74-E8095F35FA49}|PetroTraderPro\\PetroTraderPro.vbproj|c:\\users\\sham\\desktop\\dev source\\petrotraderpro\\petrotraderpro\\petrotraderpro\\fuel\\fueltankrec.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}",
+      "RelativeMoniker": "D:0:0:{CBA09872-8D77-41D2-BF74-E8095F35FA49}|PetroTraderPro\\PetroTraderPro.vbproj|solutionrelative:petrotraderpro\\fuel\\fueltankrec.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CBA09872-8D77-41D2-BF74-E8095F35FA49}|PetroTraderPro\\PetroTraderPro.vbproj|C:\\Users\\SHAM\\Desktop\\DEV SOURCE\\PetroTraderPro\\PetroTraderPro\\petrotraderpro\\fuel\\fuelstock.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}",
+      "RelativeMoniker": "D:0:0:{CBA09872-8D77-41D2-BF74-E8095F35FA49}|PetroTraderPro\\PetroTraderPro.vbproj|solutionrelative:petrotraderpro\\fuel\\fuelstock.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CBA09872-8D77-41D2-BF74-E8095F35FA49}|PetroTraderPro\\PetroTraderPro.vbproj|C:\\Users\\SHAM\\Desktop\\DEV SOURCE\\PetroTraderPro\\PetroTraderPro\\petrotraderpro\\fuel\\fuelsales.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}",
+      "RelativeMoniker": "D:0:0:{CBA09872-8D77-41D2-BF74-E8095F35FA49}|PetroTraderPro\\PetroTraderPro.vbproj|solutionrelative:petrotraderpro\\fuel\\fuelsales.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CBA09872-8D77-41D2-BF74-E8095F35FA49}|PetroTraderPro\\PetroTraderPro.vbproj|C:\\Users\\SHAM\\Desktop\\DEV SOURCE\\PetroTraderPro\\PetroTraderPro\\petrotraderpro\\fuel\\fuelesales.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}",
+      "RelativeMoniker": "D:0:0:{CBA09872-8D77-41D2-BF74-E8095F35FA49}|PetroTraderPro\\PetroTraderPro.vbproj|solutionrelative:petrotraderpro\\fuel\\fuelesales.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CBA09872-8D77-41D2-BF74-E8095F35FA49}|PetroTraderPro\\PetroTraderPro.vbproj|C:\\Users\\SHAM\\Desktop\\DEV SOURCE\\PetroTraderPro\\PetroTraderPro\\petrotraderpro\\suppliers\\suplist.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}",
+      "RelativeMoniker": "D:0:0:{CBA09872-8D77-41D2-BF74-E8095F35FA49}|PetroTraderPro\\PetroTraderPro.vbproj|solutionrelative:petrotraderpro\\suppliers\\suplist.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CBA09872-8D77-41D2-BF74-E8095F35FA49}|PetroTraderPro\\PetroTraderPro.vbproj|C:\\Users\\SHAM\\Desktop\\DEV SOURCE\\PetroTraderPro\\PetroTraderPro\\petrotraderpro\\web.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
+      "RelativeMoniker": "D:0:0:{CBA09872-8D77-41D2-BF74-E8095F35FA49}|PetroTraderPro\\PetroTraderPro.vbproj|solutionrelative:petrotraderpro\\web.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CBA09872-8D77-41D2-BF74-E8095F35FA49}|PetroTraderPro\\PetroTraderPro.vbproj|C:\\Users\\SHAM\\Desktop\\DEV SOURCE\\PetroTraderPro\\PetroTraderPro\\petrotraderpro\\inventory\\items.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}",
+      "RelativeMoniker": "D:0:0:{CBA09872-8D77-41D2-BF74-E8095F35FA49}|PetroTraderPro\\PetroTraderPro.vbproj|solutionrelative:petrotraderpro\\inventory\\items.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CBA09872-8D77-41D2-BF74-E8095F35FA49}|PetroTraderPro\\PetroTraderPro.vbproj|C:\\Users\\SHAM\\Desktop\\DEV SOURCE\\PetroTraderPro\\PetroTraderPro\\petrotraderpro\\root.master||{B30AFBFF-D992-43B7-B62D-2642580A2883}",
+      "RelativeMoniker": "D:0:0:{CBA09872-8D77-41D2-BF74-E8095F35FA49}|PetroTraderPro\\PetroTraderPro.vbproj|solutionrelative:petrotraderpro\\root.master||{B30AFBFF-D992-43B7-B62D-2642580A2883}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CBA09872-8D77-41D2-BF74-E8095F35FA49}|PetroTraderPro\\PetroTraderPro.vbproj|C:\\Users\\SHAM\\Desktop\\DEV SOURCE\\PetroTraderPro\\PetroTraderPro\\petrotraderpro\\signin.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}",
+      "RelativeMoniker": "D:0:0:{CBA09872-8D77-41D2-BF74-E8095F35FA49}|PetroTraderPro\\PetroTraderPro.vbproj|solutionrelative:petrotraderpro\\signin.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CBA09872-8D77-41D2-BF74-E8095F35FA49}|PetroTraderPro\\PetroTraderPro.vbproj|C:\\Users\\SHAM\\Desktop\\DEV SOURCE\\PetroTraderPro\\PetroTraderPro\\petrotraderpro\\default.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}",
+      "RelativeMoniker": "D:0:0:{CBA09872-8D77-41D2-BF74-E8095F35FA49}|PetroTraderPro\\PetroTraderPro.vbproj|solutionrelative:petrotraderpro\\default.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "fuelTankRec.aspx",
+              "DocumentMoniker": "C:\\Users\\SHAM\\Desktop\\DEV SOURCE\\PetroTraderPro\\PetroTraderPro\\PetroTraderPro\\fuel\\fuelTankRec.aspx",
+              "RelativeDocumentMoniker": "PetroTraderPro\\fuel\\fuelTankRec.aspx",
+              "ToolTip": "C:\\Users\\SHAM\\Desktop\\DEV SOURCE\\PetroTraderPro\\PetroTraderPro\\PetroTraderPro\\fuel\\fuelTankRec.aspx",
+              "RelativeToolTip": "PetroTraderPro\\fuel\\fuelTankRec.aspx",
+              "LogicalView": "7651a703-06e5-11d1-8ebd-00a0c90f26ea",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000195|",
+              "WhenOpened": "2025-10-01T18:42:48.01Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "fuelstock.aspx",
+              "DocumentMoniker": "C:\\Users\\SHAM\\Desktop\\DEV SOURCE\\PetroTraderPro\\PetroTraderPro\\PetroTraderPro\\fuel\\fuelstock.aspx",
+              "RelativeDocumentMoniker": "PetroTraderPro\\fuel\\fuelstock.aspx",
+              "ToolTip": "C:\\Users\\SHAM\\Desktop\\DEV SOURCE\\PetroTraderPro\\PetroTraderPro\\PetroTraderPro\\fuel\\fuelstock.aspx",
+              "RelativeToolTip": "PetroTraderPro\\fuel\\fuelstock.aspx",
+              "LogicalView": "7651a703-06e5-11d1-8ebd-00a0c90f26ea",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000195|",
+              "WhenOpened": "2025-10-01T18:42:20.536Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "supList.aspx",
+              "DocumentMoniker": "C:\\Users\\SHAM\\Desktop\\DEV SOURCE\\PetroTraderPro\\PetroTraderPro\\PetroTraderPro\\suppliers\\supList.aspx",
+              "RelativeDocumentMoniker": "PetroTraderPro\\suppliers\\supList.aspx",
+              "ToolTip": "C:\\Users\\SHAM\\Desktop\\DEV SOURCE\\PetroTraderPro\\PetroTraderPro\\PetroTraderPro\\suppliers\\supList.aspx",
+              "RelativeToolTip": "PetroTraderPro\\suppliers\\supList.aspx",
+              "LogicalView": "7651a703-06e5-11d1-8ebd-00a0c90f26ea",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000195|",
+              "WhenOpened": "2025-10-01T18:38:50.092Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "fuelESales.aspx",
+              "DocumentMoniker": "C:\\Users\\SHAM\\Desktop\\DEV SOURCE\\PetroTraderPro\\PetroTraderPro\\PetroTraderPro\\fuel\\fuelESales.aspx",
+              "RelativeDocumentMoniker": "PetroTraderPro\\fuel\\fuelESales.aspx",
+              "ToolTip": "C:\\Users\\SHAM\\Desktop\\DEV SOURCE\\PetroTraderPro\\PetroTraderPro\\PetroTraderPro\\fuel\\fuelESales.aspx",
+              "RelativeToolTip": "PetroTraderPro\\fuel\\fuelESales.aspx",
+              "LogicalView": "7651a703-06e5-11d1-8ebd-00a0c90f26ea",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000195|",
+              "WhenOpened": "2025-10-01T18:32:15.181Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "items.aspx",
+              "DocumentMoniker": "C:\\Users\\SHAM\\Desktop\\DEV SOURCE\\PetroTraderPro\\PetroTraderPro\\PetroTraderPro\\inventory\\items.aspx",
+              "RelativeDocumentMoniker": "PetroTraderPro\\inventory\\items.aspx",
+              "ToolTip": "C:\\Users\\SHAM\\Desktop\\DEV SOURCE\\PetroTraderPro\\PetroTraderPro\\PetroTraderPro\\inventory\\items.aspx",
+              "RelativeToolTip": "PetroTraderPro\\inventory\\items.aspx",
+              "LogicalView": "7651a703-06e5-11d1-8ebd-00a0c90f26ea",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000195|",
+              "WhenOpened": "2025-10-01T18:32:01.765Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "Root.master",
+              "DocumentMoniker": "C:\\Users\\SHAM\\Desktop\\DEV SOURCE\\PetroTraderPro\\PetroTraderPro\\PetroTraderPro\\Root.master",
+              "RelativeDocumentMoniker": "PetroTraderPro\\Root.master",
+              "ToolTip": "C:\\Users\\SHAM\\Desktop\\DEV SOURCE\\PetroTraderPro\\PetroTraderPro\\PetroTraderPro\\Root.master",
+              "RelativeToolTip": "PetroTraderPro\\Root.master",
+              "LogicalView": "7651a703-06e5-11d1-8ebd-00a0c90f26ea",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000195|",
+              "WhenOpened": "2025-10-01T18:24:50.205Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "SignIn.aspx",
+              "DocumentMoniker": "C:\\Users\\SHAM\\Desktop\\DEV SOURCE\\PetroTraderPro\\PetroTraderPro\\PetroTraderPro\\SignIn.aspx",
+              "RelativeDocumentMoniker": "PetroTraderPro\\SignIn.aspx",
+              "ToolTip": "C:\\Users\\SHAM\\Desktop\\DEV SOURCE\\PetroTraderPro\\PetroTraderPro\\PetroTraderPro\\SignIn.aspx",
+              "RelativeToolTip": "PetroTraderPro\\SignIn.aspx",
+              "LogicalView": "7651a703-06e5-11d1-8ebd-00a0c90f26ea",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000195|",
+              "WhenOpened": "2025-10-01T18:17:43.148Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "Default.aspx",
+              "DocumentMoniker": "C:\\Users\\SHAM\\Desktop\\DEV SOURCE\\PetroTraderPro\\PetroTraderPro\\PetroTraderPro\\Default.aspx",
+              "RelativeDocumentMoniker": "PetroTraderPro\\Default.aspx",
+              "ToolTip": "C:\\Users\\SHAM\\Desktop\\DEV SOURCE\\PetroTraderPro\\PetroTraderPro\\PetroTraderPro\\Default.aspx",
+              "RelativeToolTip": "PetroTraderPro\\Default.aspx",
+              "LogicalView": "7651a703-06e5-11d1-8ebd-00a0c90f26ea",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000195|",
+              "WhenOpened": "2025-10-01T17:45:53.086Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "fuelsales.aspx",
+              "DocumentMoniker": "C:\\Users\\SHAM\\Desktop\\DEV SOURCE\\PetroTraderPro\\PetroTraderPro\\PetroTraderPro\\fuel\\fuelsales.aspx",
+              "RelativeDocumentMoniker": "PetroTraderPro\\fuel\\fuelsales.aspx",
+              "ToolTip": "C:\\Users\\SHAM\\Desktop\\DEV SOURCE\\PetroTraderPro\\PetroTraderPro\\PetroTraderPro\\fuel\\fuelsales.aspx",
+              "RelativeToolTip": "PetroTraderPro\\fuel\\fuelsales.aspx",
+              "LogicalView": "7651a703-06e5-11d1-8ebd-00a0c90f26ea",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000195|",
+              "WhenOpened": "2025-10-01T17:35:51.715Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Web.config",
+              "DocumentMoniker": "C:\\Users\\SHAM\\Desktop\\DEV SOURCE\\PetroTraderPro\\PetroTraderPro\\PetroTraderPro\\Web.config",
+              "RelativeDocumentMoniker": "PetroTraderPro\\Web.config",
+              "ToolTip": "C:\\Users\\SHAM\\Desktop\\DEV SOURCE\\PetroTraderPro\\PetroTraderPro\\PetroTraderPro\\Web.config",
+              "RelativeToolTip": "PetroTraderPro\\Web.config",
+              "ViewState": "AgIAAJkAAAAAAAAAAAAAAKQAAACIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000601|",
+              "WhenOpened": "2025-10-01T17:37:26.943Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

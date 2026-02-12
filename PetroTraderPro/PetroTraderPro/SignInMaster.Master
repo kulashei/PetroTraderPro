@@ -1,0 +1,38 @@
+﻿<%@ Master Language="VB" AutoEventWireup="true" CodeBehind="SignInMaster.master.vb" Inherits="PetroTraderPro.SignInMaster" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server" EnableViewState="false">
+    <meta charset="UTF-8" />
+    <title></title>
+    <meta name="viewport" content="width=device-width, user-scalable=no, maximum-scale=1.0, minimum-scale=1.0" />
+    <link rel="stylesheet" type="text/css" href='<%# ResolveUrl("~/Content/Content.css") %>' />
+    <link rel="stylesheet" type="text/css" href='<%# ResolveUrl("~/Content/Layout.css") %>' />
+    <asp:ContentPlaceHolder ID="Head" runat="server"></asp:ContentPlaceHolder>
+    <script type="text/javascript" src='<%# ResolveUrl("~/Content/Script.js") %>'></script>
+</head>
+<body>
+    <form id="form1" runat="server" class="form">
+        <div class="content-wrapper">
+
+            <div class="content" id="pageContent">
+                <asp:ContentPlaceHolder runat="server" ID="PageContent"></asp:ContentPlaceHolder>
+<%--                <div class="footer-wrapper" id="footerWrapper">
+                    <div class="footer">
+                        <span class="footer-left">&copy; 2018 Company</span>
+                        <span class="footer-right">
+                            <a class="footer-link" href="#">Privacy Policy</a>
+                            <a class="footer-link" href="#">Terms of Service</a>
+                        </span>
+                    </div>
+                </div>--%>
+            </div>
+        </div>
+        <dx:ASPxSiteMapDataSource runat="server" ID="ApplicationMenuDataSource" SiteMapFileName="~/App_Data/ApplicationMenuDataSource.sitemap" />
+        <dx:ASPxGlobalEvents runat="server">
+            <ClientSideEvents ControlsInitialized="onControlsInitialized" BrowserWindowResized="onBrowserWindowResized" />
+        </dx:ASPxGlobalEvents>
+    </form>
+</body>
+</html>

@@ -1,0 +1,341 @@
+<%@ Master Language="VB" AutoEventWireup="true" CodeBehind="Root.master.vb" Inherits="PetroTraderPro.Root" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server" enableviewstate="false">
+    <meta charset="UTF-8" />
+    <title></title>
+    <meta name="viewport" content="width=device-width, user-scalable=yes, maximum-scale=1.0, minimum-scale=1.0" />
+    <link rel="stylesheet" type="text/css" href='<%# ResolveUrl("~/Content/Content.css") %>' />
+    <link rel="stylesheet" type="text/css" href='<%# ResolveUrl("~/Content/Layout.css") %>' />
+    <asp:ContentPlaceHolder ID="Head" runat="server"></asp:ContentPlaceHolder>
+    <script type="text/javascript" src='<%# ResolveUrl("~/Content/Script.js") %>'>
+
+    </script>
+
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Space+Grotesk&display=swap" rel="stylesheet">
+
+    <!-- Icon Font Stylesheet -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+
+    <!-- Libraries Stylesheet -->
+    <link href="lib/animate/animate.min.css" rel="stylesheet">
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="Content/Assets/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Template Stylesheet -->
+    <link href="Content/Assets/css/style.css" rel="stylesheet">
+
+
+
+    <link href="Content/Assets/css/style.css" rel="stylesheet">
+</head>
+<body>
+    <form id="form1" runat="server" class="form">
+   <!-- Spinner Start -->
+    <div id="spinner"
+        class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
+        <div class="spinner-grow text-primary" style="width: 3rem; height: 3rem;" role="status">
+            <span class="sr-only">Loading...</span>
+        </div>
+    </div>
+    <!-- Spinner End -->
+
+        <dx:ASPxPanel runat="server" ID="HeaderPanel" ClientInstanceName="headerPanel" FixedPosition="WindowTop"
+            FixedPositionOverlap="true" CssClass="app-header">
+            <PanelCollection>
+                <dx:PanelContent runat="server">
+                    <div class="left-block">
+                        <dx:ASPxMenu runat="server" ID="LeftAreaMenu" ClientInstanceName="leftAreaMenu"
+                            ItemAutoWidth="false" ItemWrap="false" SeparatorWidth="0" EnableHotTrack="false"
+                            Width="100%" CssClass="header-menu" SyncSelectionMode="None">
+                            <ItemStyle VerticalAlign="Middle" CssClass="item" />
+                            <Items>
+                                <dx:MenuItem Text="" Name="ToggleLeftPanel" GroupName="LeftPanel">
+                                    <ItemStyle CssClass="toggle-item vertically-aligned" CheckedStyle-CssClass="checked selected">
+                                        <CheckedStyle CssClass="checked selected"></CheckedStyle>
+                                    </ItemStyle>
+                                    <Image Url="~/Content/Images/menu.svg" Height="18px" Width="18px" />
+                                </dx:MenuItem>
+                                <dx:MenuItem Text="" ItemStyle-CssClass="image-item vertically-aligned" NavigateUrl="~/">
+                                    <%--<Image SpriteProperties-CssClass="header-logo" />--%>
+                                    <Image Url="img/appLOGO1.png" Height="50px" Width="170px" />
+
+                                    <ItemStyle CssClass="image-item vertically-aligned"></ItemStyle>
+
+                                </dx:MenuItem>
+                            </Items>
+                            <ClientSideEvents ItemClick="onLeftMenuItemClick" />
+                        </dx:ASPxMenu>
+                    </div>
+
+                    <div class="right-block">
+                        <dx:ASPxMenu runat="server" ID="RightAreaMenu" ClientInstanceName="rightAreaMenu"
+                            ItemAutoWidth="false" ItemWrap="false" ShowPopOutImages="False"
+                            SeparatorWidth="0" ApplyItemStyleToTemplates="true"
+                            Width="100%" CssClass="header-menu">
+                            <ItemStyle VerticalAlign="Middle" CssClass="item" />
+                            <SubMenuItemStyle CssClass="item" />
+                            <SubMenuStyle CssClass="header-sub-menu" />
+                            <Items>
+                                <dx:MenuItem Name="AccountItem" ItemStyle-CssClass="image-item" Image-Height="25px">
+
+                                    <ItemStyle CssClass="image-item"></ItemStyle>
+                                    <TextTemplate>
+                                        <div class="account-background">
+                                            <div runat="server" id="AccountImage" class="empty-image" />
+                                        </div>
+                                    </TextTemplate>
+                                    <Items>
+                                        <dx:MenuItem Name="Profile" Text="My Profile" NavigateUrl="~/users/userProfile.aspx" Image-Height="16px">
+                                            <Image Height="16px" Url="img/user-profile.gif"></Image>
+                                        </dx:MenuItem>
+                                        <dx:MenuItem Name="SignOutItem" Text="Sign out" Image-Url="Content/Images/sign-out.svg" NavigateUrl="SignIn.aspx" Image-Height="16px">
+                                            <Image Height="16px" Url="Content/Images/sign-out.svg"></Image>
+                                        </dx:MenuItem>
+                                    </Items>
+                                </dx:MenuItem>
+                            </Items>
+                            <ClientSideEvents ItemClick="onRightMenuItemClick" />
+                        </dx:ASPxMenu>
+                    </div>
+
+                    <div class="menu-container">
+                        <div>
+                            <dx:ASPxMenu runat="server" ID="ApplicationMenu" ClientInstanceName="applicationMenu"
+                                ItemAutoWidth="false" EnableSubMenuScrolling="true"
+                                ShowPopOutImages="True" SeparatorWidth="0" ItemWrap="false"
+                                CssClass="header-menu application-menu" Width="100%" HorizontalAlign="Right" OnItemDataBound="ApplicationMenu_ItemDataBound">
+                                <SettingsAdaptivity Enabled="true" EnableAutoHideRootItems="true" />
+                                <ItemStyle VerticalAlign="Middle" CssClass="item" SelectedStyle-CssClass="selected" HoverStyle-CssClass="hovered">
+                                    <SelectedStyle CssClass="selected"></SelectedStyle>
+
+                                    <HoverStyle CssClass="hovered"></HoverStyle>
+                                </ItemStyle>
+                                <ItemImage Width="22" Height="22" />
+                                <SubMenuStyle CssClass="header-sub-menu" />
+                                <AdaptiveMenuImage SpriteProperties-CssClass="adaptive-image">
+                                    <SpriteProperties CssClass="adaptive-image"></SpriteProperties>
+                                </AdaptiveMenuImage>
+                            </dx:ASPxMenu>
+                        </div>
+                    </div>
+                    <div class="menu-container" style="text-align: center; color: #0D6B68;">
+                        <h4 style="color: #0D6B68"><% =  Session("BusinessName").ToString %> </h4>
+                    </div>
+                    <div class="dx-clear"></div>
+                </dx:PanelContent>
+            </PanelCollection>
+        </dx:ASPxPanel>
+
+        <dx:ASPxPanel runat="server" ID="LeftPanel" ClientInstanceName="leftPanel"
+            Collapsible="true" ScrollBars="Auto" FixedPosition="WindowLeft" Width="210px"
+            CssClass="left-panel" Paddings-Padding="0" Styles-ExpandBar-CssClass="expand-bar">
+
+            <Styles>
+                <ExpandBar CssClass="expand-bar"></ExpandBar>
+            </Styles>
+
+            <SettingsAdaptivity CollapseAtWindowInnerWidth="960" />
+            <SettingsCollapsing ExpandButton-Visible="false" ExpandEffect="PopupToRight" AnimationType="Slide" Modal="true">
+                <ExpandButton Visible="False"></ExpandButton>
+            </SettingsCollapsing>
+
+            <Paddings Padding="0px"></Paddings>
+            <PanelCollection>
+                <dx:PanelContent>
+                    <dx:ASPxNavBar ID="ASPxNavBar1" runat="server" Theme="Office365" Width="100%" AutoCollapse="True">
+                        <Groups>
+                            <dx:NavBarGroup Text="Dashboard" Name="mnuDashboard" NavigateUrl="~/Default">
+                            </dx:NavBarGroup>
+                            <dx:NavBarGroup Text="Fuel Sales" Name="mnuFuelSales" Expanded="false">
+                                <Items>
+                                    <dx:NavBarItem Text="Daily Metre Readings" Name="smnuFuelSales" NavigateUrl="~/fuel/fuelsales"></dx:NavBarItem>
+                                    <dx:NavBarItem Text="Fuel Stock" Name="smnuFuelStock" NavigateUrl="~/fuel/fuelstock"></dx:NavBarItem>
+                                    <dx:NavBarItem Text="Fuel Receipt" Name="smnuFuelReceipt" NavigateUrl="~/fuel/fuelTankRec"></dx:NavBarItem>
+                                    <dx:NavBarItem Text="Fuel Consumption" Name="smnuFuelConsumptionk" NavigateUrl="~/fuel/fuelConsume"></dx:NavBarItem>
+                                    <dx:NavBarItem Text="E-Payments" Name="smnuFuelEpayment" NavigateUrl="~/fuel/fuelESales"></dx:NavBarItem>
+                                    <dx:NavBarItem Text="Coupon Sales" Name="smnuFuelCouponSales" NavigateUrl="~/fuel/fuelCouponSales"></dx:NavBarItem>
+                                    <dx:NavBarItem Text="Fuel Transfer" Name="smnuFuelTranfer" NavigateUrl="~/fuel/fuelTransfer"></dx:NavBarItem>
+                                </Items>
+                            </dx:NavBarGroup>
+                            <dx:NavBarGroup Text="Customers" Name="mnuCustomers" Expanded="false">
+                                <Items>
+                                    <dx:NavBarItem Text="Fuel Credit Sales" Name="smnuCustomerFuelCredit" NavigateUrl="customers/cusFuelSales"></dx:NavBarItem>
+                                    <dx:NavBarItem Text="Customer Supply" Name="smnuCustomerInvSupply" NavigateUrl="customers/cusSales" Visible="false"></dx:NavBarItem>
+                                    <dx:NavBarItem Text="Payments" Name="smnuCustomerPayment" NavigateUrl="customers/customerPay"></dx:NavBarItem>
+                                    <dx:NavBarItem Text="Debit/Credit Account" Name="smnuCustomerDrCr" NavigateUrl="~/customers/customerDrCr"></dx:NavBarItem>
+                                    <dx:NavBarItem Text="Customers" Name="smnuCustomers" NavigateUrl="~/customers/customers"></dx:NavBarItem>
+                                    <dx:NavBarItem Text="Customer Deposit" NavigateUrl="~/customers/customerDeposit" Visible="False"></dx:NavBarItem>
+                                </Items>
+                            </dx:NavBarGroup>
+                            <dx:NavBarGroup Expanded="False" Text="Lube Sales" Name="mnuInvetorySales" Visible="false">
+                                <Items>
+                                    <dx:NavBarItem NavigateUrl="sales/cashsales" Text="General Sales">
+                                    </dx:NavBarItem>
+                                    <dx:NavBarItem NavigateUrl="sales/salesPend" Text="Pending Invoices">
+                                    </dx:NavBarItem>
+                                    <dx:NavBarItem NavigateUrl="~/Operations/weaponRetrive" Text="Cancel Receipt">
+                                    </dx:NavBarItem>
+                                </Items>
+                            </dx:NavBarGroup>
+                            <dx:NavBarGroup Text="Inventory" Expanded="false" Visible="False">
+                                <Items>
+                                    <dx:NavBarItem Text="Stock Transfer" NavigateUrl="weapons/weaponTransfer"></dx:NavBarItem>
+                                    <dx:NavBarItem Text="Stock Convestion" NavigateUrl="Weapons/weaponItemAdd"></dx:NavBarItem>
+                                    <dx:NavBarItem Text="Stock Maintenance" NavigateUrl="~/comm/commView"></dx:NavBarItem>
+                                    <dx:NavBarItem Text="Item List" NavigateUrl="inventory/items"></dx:NavBarItem>
+                                    <dx:NavBarItem Text="Item Category" NavigateUrl="inventory/items"></dx:NavBarItem>
+                                    <dx:NavBarItem Text="Opening Stock" NavigateUrl="~/comm/commView"></dx:NavBarItem>
+                                </Items>
+                            </dx:NavBarGroup>
+                            <%--                                <dx:NavBarGroup Expanded="False" Name="mnuExp" Text="Expenditure">
+                                    <Items>
+                                        <dx:NavBarItem NavigateUrl="~/expenditure/Exp"  Name="smnuAccountExp" Text="Expenditure"></dx:NavBarItem>
+                                        <dx:NavBarItem NavigateUrl="~/expenditure/expRequest" Name="smnuExpRquest"  Text="Expenditure Request"></dx:NavBarItem>
+                                    </Items>
+                                </dx:NavBarGroup>--%>
+                            <dx:NavBarGroup Expanded="False" Name="mnuAccount" Text="Accounts">
+                                <Items>
+                                    <dx:NavBarItem NavigateUrl="~/Account/Expenditure" Name="smnuAccountExp" Text="Expenditure"></dx:NavBarItem>
+                                    <dx:NavBarItem NavigateUrl="~/Account/AccountDepositSales" Name="smnuAccountDepostSales" Text="Account Deposit(Sales)"></dx:NavBarItem>
+                                    <dx:NavBarItem NavigateUrl="~/Account/AccountDeposit" Name="smnuAccountDeposit" Text="Account Deposit"></dx:NavBarItem>
+                                    <dx:NavBarItem NavigateUrl="~/Account/AccountTransferSales" Name="smnuAccountTransfer" Text="Account Transfer"></dx:NavBarItem>
+                                    <dx:NavBarItem NavigateUrl="~/Account/AccountDrCr" Name="smnuAccountDrCr" Text="Debit/Credit Account"></dx:NavBarItem>
+                                </Items>
+                            </dx:NavBarGroup>
+                            <dx:NavBarGroup Text="Suppliers" Name="mnuSuppliers" Expanded="false">
+                                <Items>
+                                    <dx:NavBarItem Text="Fuel Receipt" NavigateUrl="~/suppliers/supFuelRec" Name="smnuSupplierFuelRec"></dx:NavBarItem>
+                                    <dx:NavBarItem Text="Item Receipt" NavigateUrl="~/suppliers/supReceipt" Name="smnuSupplierInvRec" Visible="False"></dx:NavBarItem>
+                                    <dx:NavBarItem Text="Payments" NavigateUrl="~/suppliers/supPayment" Name="smnuSupplierPayment"></dx:NavBarItem>
+                                    <dx:NavBarItem Text="Debit/Credit Account" NavigateUrl="~/suppliers/supDrCr" Name="smnuSupplierDrCr"></dx:NavBarItem>
+                                    <dx:NavBarItem Text="Supplier List" NavigateUrl="~/suppliers/supList" Name="smnuSuppliers"></dx:NavBarItem>
+                                </Items>
+                            </dx:NavBarGroup>
+                            <dx:NavBarGroup Expanded="False" Text="Employees" Name="mnuEployee" Visible="true">
+                                <Items>
+                                    <dx:NavBarItem Text="Attendant Shortages" Name="smnuFuelAttentShortage" NavigateUrl="employees/FuelAttendShort"></dx:NavBarItem>
+                                    <dx:NavBarItem Text="Attendant Payments" Name="smnuFuelAttentShortage" NavigateUrl="~/employees/attendPay"></dx:NavBarItem>
+                                    <dx:NavBarItem Text="Debit/Credit Attendant Account" Name="smnuFuelAttentShortage" NavigateUrl="~/employees/attendAccDrCr"></dx:NavBarItem>
+                                    <dx:NavBarItem NavigateUrl="~/employees/employees" Text="Fuel Attebdants"></dx:NavBarItem>
+                                </Items>
+                            </dx:NavBarGroup>
+                            <dx:NavBarGroup Text="Reports" Name="mnuReports" Expanded="false">
+                                <Items>
+                                    <dx:NavBarItem Text="Fuel Reports" Name="smnuFuelReports" NavigateUrl="~/reports/fuelRpts"></dx:NavBarItem>
+                                    <dx:NavBarItem Text="Lube Sales Reports" Name="smnuLubeSalesReports" NavigateUrl="~/reports/invRpts" Visible="False"></dx:NavBarItem>
+                                    <dx:NavBarItem Text="Account Reports" Name="smnuAccountReports" NavigateUrl="~/reports/accountRpts"></dx:NavBarItem>
+                                    <dx:NavBarItem Text="Customer Reports" Name="smnuCustomerReports" NavigateUrl="~/reports/cusRpts"></dx:NavBarItem>
+                                    <dx:NavBarItem Text="Supplier Reports" Name="smnuSupplierReports" NavigateUrl="~/reports/SupRpts"></dx:NavBarItem>
+                                    <dx:NavBarItem Text="Expenditure Reports" Name="smnuExpenditureReports" NavigateUrl="~/reports/expRpts"></dx:NavBarItem>
+                                    <dx:NavBarItem Text="Attendant Reports" Name="smnuSupplierReports" NavigateUrl="~/reports/attendRpt"></dx:NavBarItem>
+                                    <dx:NavBarItem Text="General Reports" Name="smnuGeneralReports" NavigateUrl="~/reports/genRpts" Visible="False"></dx:NavBarItem>
+                                </Items>
+                                <ItemStyle>
+                                    <SelectedStyle BackColor="#0D6B68">
+                                    </SelectedStyle>
+                                </ItemStyle>
+                            </dx:NavBarGroup>
+                            <dx:NavBarGroup Text="Setup" Name="mnuGenSetup" Expanded="false">
+                                <Items>
+                                    <dx:NavBarItem Text="Fuel Setup" Name="smnuFuelSetup" NavigateUrl="~/setup/fuelSetup"></dx:NavBarItem>
+                                    <dx:NavBarItem Text="Site Setup" Name="smnuSiteSetup" NavigateUrl="~/setup/siteSetup"></dx:NavBarItem>
+                                    <dx:NavBarItem Text="Account Setup" Name="smnuAccountSetup" NavigateUrl="~/setup/accountSetup"></dx:NavBarItem>
+                                    <dx:NavBarItem Text="Expenditure Category" Name="smnuExpenditureSetup" NavigateUrl="~/setup/expCat"></dx:NavBarItem>
+                                    <dx:NavBarItem Text="Business Information" Name="smnuBusInfoSetup" NavigateUrl="setup/busInfoSetup"></dx:NavBarItem>
+                                </Items>
+                            </dx:NavBarGroup>
+                            <dx:NavBarGroup Text="User Setup" Name="mnuUserSetup" Expanded="false">
+                                <Items>
+                                    <dx:NavBarItem Text="Users" Name="smnuUser" NavigateUrl="~/users/users"></dx:NavBarItem>
+                                    <dx:NavBarItem Text="User Groups/Roles" Name="smnuUserGroups" NavigateUrl="~/users/userGroupRoles"></dx:NavBarItem>
+                                    <%--                                        <dx:NavBarItem Text="Pay" Name="smnuUserGroups" NavigateUrl="WebForm1" Visible="false"></dx:NavBarItem>--%>
+                                </Items>
+                            </dx:NavBarGroup>
+                        </Groups>
+                        <GroupHeaderStyle Font-Bold="False" ForeColor="Black">
+                        </GroupHeaderStyle>
+                        <ItemStyle Font-Bold="False" ForeColor="Black">
+                            <SelectedStyle BackColor="#0D6B68" ForeColor="White">
+                            </SelectedStyle>
+                        </ItemStyle>
+                    </dx:ASPxNavBar>
+
+
+                </dx:PanelContent>
+            </PanelCollection>
+            <ClientSideEvents Init="onLeftPanelInit" Collapsed="onLeftPanelCollapsed" />
+        </dx:ASPxPanel>
+
+
+        <dx:ASPxPanel runat="server" ID="PageToolbarPanel" ClientInstanceName="pageToolbarPanel"
+            CssClass="page-toolbar-wrapper">
+            <PanelCollection>
+                <dx:PanelContent>
+                    <asp:ContentPlaceHolder runat="server" ID="PageToolbar" />
+                </dx:PanelContent>
+            </PanelCollection>
+            <ClientSideEvents Init="onPageToolbarInit" />
+        </dx:ASPxPanel>
+
+        <div class="content" id="pageContent">
+            <asp:ContentPlaceHolder runat="server" ID="PageContent"></asp:ContentPlaceHolder>
+            <%--            <div class="footer-wrapper" id="footerWrapper">
+                    <div class="footer">
+                        <span class="footer-left">&copy; 2021 JSolutions IT Systems</span>
+                        <span class="footer-right">
+                            <a class="footer-link" href="#">Privacy Policy</a>
+                            <a class="footer-link" href="#">Terms of Service</a>
+                        </span>
+                    </div>
+                </div>--%>
+        </div>
+
+        <dx:ASPxPanel runat="server" ID="ASPxPanel1" ClientInstanceName="pageToolbarPanel" FixedPosition="WindowBottom" Height="40PX"
+            CssClass="page-toolbar-wrapper">
+            <PanelCollection>
+                <dx:PanelContent>
+                    <div class="footer-wrapper" id="footerWrapper">
+                        <div class="footer">
+                            <span class="footer-left">&copy; 2025 JSolutions Systems</span>
+                            <span class="footer-right">
+                                <a class="footer-link" href="#">Privacy Policy</a>
+                                <a class="footer-link" href="#">Terms of Service</a>
+                            </span>
+                        </div>
+                    </div>
+                </dx:PanelContent>
+            </PanelCollection>
+        </dx:ASPxPanel>
+
+
+        <dx:ASPxSiteMapDataSource runat="server" ID="ApplicationMenuDataSource" SiteMapFileName="~/App_Data/ApplicationMenuDataSource.sitemap" />
+        <dx:ASPxGlobalEvents runat="server">
+            <ClientSideEvents ControlsInitialized="onControlsInitialized" BrowserWindowResized="onBrowserWindowResized" />
+        </dx:ASPxGlobalEvents>
+    </form>
+
+
+
+    <!-- JavaScript Libraries -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="../Content/Assets/lib/wow/wow.min.js"></script>
+    <script src="../Content/Assets/lib/easing/easing.min.js"></script>
+    <script src="../Content/Assets/lib/waypoints/waypoints.min.js"></script>
+    <script src="../Content/Assets/lib/owlcarousel/owl.carousel.min.js"></script>
+
+    <!-- Template Javascript -->
+    <script src="../Content/Assets/js/main.js"></script>
+
+
+</body>
+</html>

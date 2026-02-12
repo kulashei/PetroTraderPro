@@ -1,0 +1,1466 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>
+    </SchemaVersion>
+    <ProjectGuid>{CBA09872-8D77-41D2-BF74-E8095F35FA49}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{F184B08F-C81C-45F6-A57F-5ABD9991F28F}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <RootNamespace>PetroTraderPro</RootNamespace>
+    <AssemblyName>PetroTraderPro</AssemblyName>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <MyType>Custom</MyType>
+    <UseIISExpress>true</UseIISExpress>
+    <Use64BitIISExpress />
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+    <UseGlobalApplicationHostFile />
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\</OutputPath>
+    <DocumentationFile>PetroTraderPro.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DocumentationFile>PetroTraderPro.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="DevExpress.Web.Bootstrap.v24.2, Version=24.2.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="Microsoft.VisualBasic.Compatibility" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="DevExpress.Data.v24.2, Version=24.2.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Web.ASPxThemes.v24.2, Version=24.2.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.RichEdit.v24.2.Core, Version=24.2.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.RichEdit.v24.2.Export, Version=24.2.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Printing.v24.2.Core, Version=24.2.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Web.v24.2, Version=24.2.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraScheduler.v24.2.Core, Version=24.2.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraScheduler.v24.2.Core.Desktop, Version=24.2.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Web.ASPxScheduler.v24.2, Version=24.2.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Web.ASPxTreeList.v24.2, Version=24.2.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Web.ASPxPivotGrid.v24.2, Version=24.2.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.PivotGrid.v24.2.Core, Version=24.2.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Web.ASPxHtmlEditor.v24.2, Version=24.2.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Pdf.v24.2.Core, Version=24.2.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Web.ASPxRichEdit.v24.2, Version=24.2.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Spreadsheet.v24.2.Core, Version=24.2.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Web.ASPxSpreadsheet.v24.2, Version=24.2.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Web.ASPxGantt.v24.2, Version=24.2.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Web.ASPxDiagram.v24.2, Version=24.2.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Charts.v24.2.Core, Version=24.2.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraCharts.v24.2, Version=24.2.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraCharts.v24.2.Web, Version=24.2.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Web.Resources.v24.2, Version=24.2.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraReports.v24.2, Version=24.2.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraReports.v24.2.Web, Version=24.2.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraReports.v24.2.Web.WebForms, Version=24.2.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Drawing.v24.2, Version=24.2.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.CodeParser.v24.2, Version=24.2.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.DataAccess.v24.2, Version=24.2.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Office.v24.2.Core, Version=24.2.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Sparkline.v24.2.Core, Version=24.2.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Xpo.v24.2, Version=24.2.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraGauges.v24.2.Core, Version=24.2.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Dashboard.v24.2.Core, Version=24.2.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Dashboard.v24.2.Web, Version=24.2.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Dashboard.v24.2.Web.WebForms, Version=24.2.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.TreeMap.v24.2.Core, Version=24.2.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Map.v24.2.Core, Version=24.2.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Pdf.v24.2.Drawing, Version=24.2.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Web.ASPxSpellChecker.v24.2, Version=24.2.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.SpellChecker.v24.2.Core, Version=24.2.8.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="Zenoph.Notify, Version=1.0.0.0, Culture=neutral, PublicKeyToken=6159daca1219f6c0, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>smsAPI\Zenoph.Notify.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Xml.Linq" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Collections.Specialized" />
+    <Import Include="System.Configuration" />
+    <Import Include="System.Text" />
+    <Import Include="System.Text.RegularExpressions" />
+    <Import Include="System.Web" />
+    <Import Include="System.Web.Caching" />
+    <Import Include="System.Web.SessionState" />
+    <Import Include="System.Web.Security" />
+    <Import Include="System.Web.Profile" />
+    <Import Include="System.Web.UI" />
+    <Import Include="System.Web.UI.WebControls" />
+    <Import Include="System.Web.UI.WebControls.WebParts" />
+    <Import Include="System.Web.UI.HtmlControls" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Account\AccountDeposit.aspx.designer.vb">
+      <DependentUpon>AccountDeposit.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Account\AccountDeposit.aspx.vb">
+      <DependentUpon>AccountDeposit.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Account\AccountDepositSales.aspx.designer.vb">
+      <DependentUpon>AccountDepositSales.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Account\AccountDepositSales.aspx.vb">
+      <DependentUpon>AccountDepositSales.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Account\AccountDrCr.aspx.designer.vb">
+      <DependentUpon>AccountDrCr.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Account\AccountDrCr.aspx.vb">
+      <DependentUpon>AccountDrCr.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Account\AccountTranfers.aspx.designer.vb">
+      <DependentUpon>AccountTranfers.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Account\AccountTranfers.aspx.vb">
+      <DependentUpon>AccountTranfers.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Account\AccountTransferSales.aspx.designer.vb">
+      <DependentUpon>AccountTransferSales.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Account\AccountTransferSales.aspx.vb">
+      <DependentUpon>AccountTransferSales.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Account\Expenditure.aspx.designer.vb">
+      <DependentUpon>Expenditure.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Account\Expenditure.aspx.vb">
+      <DependentUpon>Expenditure.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Account\Register.aspx.designer.vb">
+      <DependentUpon>Register.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Account\Register.aspx.vb">
+      <DependentUpon>Register.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AppCode\ClassQuery.vb" />
+    <Compile Include="AppCode\General.vb" />
+    <Compile Include="AppCode\modUserRoles.vb" />
+    <Compile Include="Article.aspx.designer.vb">
+      <DependentUpon>Article.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Article.aspx.vb">
+      <DependentUpon>Article.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Code\AuthHelper.vb" />
+    <Compile Include="Code\DBContext.vb" />
+    <Compile Include="customers\cusFuelSales.aspx.designer.vb">
+      <DependentUpon>cusFuelSales.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="customers\cusFuelSales.aspx.vb">
+      <DependentUpon>cusFuelSales.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="customers\customerDeposit.aspx.designer.vb">
+      <DependentUpon>customerDeposit.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="customers\customerDeposit.aspx.vb">
+      <DependentUpon>customerDeposit.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="customers\customerDrCr.aspx.designer.vb">
+      <DependentUpon>customerDrCr.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="customers\customerDrCr.aspx.vb">
+      <DependentUpon>customerDrCr.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="customers\customerPay.aspx.designer.vb">
+      <DependentUpon>customerPay.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="customers\customerPay.aspx.vb">
+      <DependentUpon>customerPay.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="customers\customers.aspx.designer.vb">
+      <DependentUpon>customers.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="customers\customers.aspx.vb">
+      <DependentUpon>customers.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Default.aspx.designer.vb">
+      <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Default.aspx.vb">
+      <DependentUpon>Default.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="employees\attendAccDrCr.aspx.designer.vb">
+      <DependentUpon>attendAccDrCr.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="employees\attendAccDrCr.aspx.vb">
+      <DependentUpon>attendAccDrCr.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="employees\attendPay.aspx.designer.vb">
+      <DependentUpon>attendPay.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="employees\attendPay.aspx.vb">
+      <DependentUpon>attendPay.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="employees\employees.aspx.designer.vb">
+      <DependentUpon>employees.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="employees\employees.aspx.vb">
+      <DependentUpon>employees.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="employees\FuelAttendShort.aspx.designer.vb">
+      <DependentUpon>FuelAttendShort.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="employees\FuelAttendShort.aspx.vb">
+      <DependentUpon>FuelAttendShort.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="fuel\fuelConsume.aspx.designer.vb">
+      <DependentUpon>fuelConsume.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="fuel\fuelConsume.aspx.vb">
+      <DependentUpon>fuelConsume.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="fuel\fuelCouponSales.aspx.designer.vb">
+      <DependentUpon>fuelCouponSales.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="fuel\fuelCouponSales.aspx.vb">
+      <DependentUpon>fuelCouponSales.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="fuel\fuelESales.aspx.designer.vb">
+      <DependentUpon>fuelESales.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="fuel\fuelESales.aspx.vb">
+      <DependentUpon>fuelESales.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="fuel\fuelsales.aspx.designer.vb">
+      <DependentUpon>fuelsales.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="fuel\fuelsales.aspx.vb">
+      <DependentUpon>fuelsales.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="fuel\fuelstock.aspx.designer.vb">
+      <DependentUpon>fuelstock.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="fuel\fuelstock.aspx.vb">
+      <DependentUpon>fuelstock.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="fuel\fuelTankRec.aspx.designer.vb">
+      <DependentUpon>fuelTankRec.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="fuel\fuelTankRec.aspx.vb">
+      <DependentUpon>fuelTankRec.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="fuel\fuelTransfer.aspx.designer.vb">
+      <DependentUpon>fuelTransfer.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="fuel\fuelTransfer.aspx.vb">
+      <DependentUpon>fuelTransfer.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Global.asax.vb">
+      <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="GridView.aspx.designer.vb">
+      <DependentUpon>GridView.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="GridView.aspx.vb">
+      <DependentUpon>GridView.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="GridViewDetailsPage.aspx.designer.vb">
+      <DependentUpon>GridViewDetailsPage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="GridViewDetailsPage.aspx.vb">
+      <DependentUpon>GridViewDetailsPage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="inventory\invOpenStock.aspx.designer.vb">
+      <DependentUpon>invOpenStock.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="inventory\invOpenStock.aspx.vb">
+      <DependentUpon>invOpenStock.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="inventory\ItemCategory.aspx.designer.vb">
+      <DependentUpon>ItemCategory.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="inventory\ItemCategory.aspx.vb">
+      <DependentUpon>ItemCategory.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="inventory\items.aspx.designer.vb">
+      <DependentUpon>items.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="inventory\items.aspx.vb">
+      <DependentUpon>items.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="inventory\stockTransfer.aspx.designer.vb">
+      <DependentUpon>stockTransfer.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="inventory\stockTransfer.aspx.vb">
+      <DependentUpon>stockTransfer.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="reports\accountRpts.aspx.designer.vb">
+      <DependentUpon>accountRpts.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="reports\accountRpts.aspx.vb">
+      <DependentUpon>accountRpts.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="reports\attendRpt.aspx.designer.vb">
+      <DependentUpon>attendRpt.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="reports\attendRpt.aspx.vb">
+      <DependentUpon>attendRpt.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="reports\cusRpts.aspx.designer.vb">
+      <DependentUpon>cusRpts.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="reports\cusRpts.aspx.vb">
+      <DependentUpon>cusRpts.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="reports\expRpts.aspx.designer.vb">
+      <DependentUpon>expRpts.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="reports\expRpts.aspx.vb">
+      <DependentUpon>expRpts.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="reports\fuelRpts.aspx.designer.vb">
+      <DependentUpon>fuelRpts.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="reports\fuelRpts.aspx.vb">
+      <DependentUpon>fuelRpts.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="reports\genRpts.aspx.designer.vb">
+      <DependentUpon>genRpts.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="reports\genRpts.aspx.vb">
+      <DependentUpon>genRpts.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="reports\invRpts.aspx.designer.vb">
+      <DependentUpon>invRpts.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="reports\invRpts.aspx.vb">
+      <DependentUpon>invRpts.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="reports\SupRpts.aspx.designer.vb">
+      <DependentUpon>SupRpts.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="reports\SupRpts.aspx.vb">
+      <DependentUpon>SupRpts.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Root.master.designer.vb">
+      <DependentUpon>Root.master</DependentUpon>
+    </Compile>
+    <Compile Include="Root.master.vb">
+      <DependentUpon>Root.master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="rpt\rptItemList.Designer.vb">
+      <DependentUpon>rptItemList.vb</DependentUpon>
+    </Compile>
+    <Compile Include="rpt\rptItemList.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="rpt\XtraRptAccountDeposit.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="rpt\XtraRptAccountDepositSales.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="rpt\XtraRptAccountList.Designer.vb">
+      <DependentUpon>XtraRptAccountList.vb</DependentUpon>
+    </Compile>
+    <Compile Include="rpt\XtraRptAccountList.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="rpt\XtraRptAccountsDebitCredit.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="rpt\XtraRptAccountStatement.Designer.vb">
+      <DependentUpon>XtraRptAccountStatement.vb</DependentUpon>
+    </Compile>
+    <Compile Include="rpt\XtraRptAccountStatement.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="rpt\XtraRptAccountTransfer.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="rpt\XtraRptAccountTrantractions.Designer.vb">
+      <DependentUpon>XtraRptAccountTrantractions.vb</DependentUpon>
+    </Compile>
+    <Compile Include="rpt\XtraRptAccountTrantractions.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="rpt\XtraRptAttendantAccountsDebitCredit.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="rpt\XtraRptAttendantDebitCreditReceipt.Designer.vb">
+      <DependentUpon>XtraRptAttendantDebitCreditReceipt.vb</DependentUpon>
+    </Compile>
+    <Compile Include="rpt\XtraRptAttendantDebitCreditReceipt.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="rpt\XtraRptAttendantDetails.Designer.vb">
+      <DependentUpon>XtraRptAttendantDetails.vb</DependentUpon>
+    </Compile>
+    <Compile Include="rpt\XtraRptAttendantDetails.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="rpt\XtraRptAttendantPaymentReceipt.Designer.vb">
+      <DependentUpon>XtraRptAttendantPaymentReceipt.vb</DependentUpon>
+    </Compile>
+    <Compile Include="rpt\XtraRptAttendantPaymentReceipt.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="rpt\XtraRptAttendantPayments.designer.vb">
+      <DependentUpon>XtraRptAttendantPayments.vb</DependentUpon>
+    </Compile>
+    <Compile Include="rpt\XtraRptAttendantPayments.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="rpt\XtraRptCashSalesWayBill.Designer.vb">
+      <DependentUpon>XtraRptCashSalesWayBill.vb</DependentUpon>
+    </Compile>
+    <Compile Include="rpt\XtraRptCashSalesWayBill.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="rpt\XtraRptCustomerAccountsDebitCredit.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="rpt\XtraRptCustomerBalance.Designer.vb">
+      <DependentUpon>XtraRptCustomerBalance.vb</DependentUpon>
+    </Compile>
+    <Compile Include="rpt\XtraRptCustomerBalance.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="rpt\XtraRptCustomerDebitCreditReceipt.Designer.vb">
+      <DependentUpon>XtraRptCustomerDebitCreditReceipt.vb</DependentUpon>
+    </Compile>
+    <Compile Include="rpt\XtraRptCustomerDebitCreditReceipt.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="rpt\XtraRptCustomerDeposittA5.designer.vb">
+      <DependentUpon>XtraRptCustomerDeposittA5.vb</DependentUpon>
+    </Compile>
+    <Compile Include="rpt\XtraRptCustomerDeposittA5.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="rpt\XtraRptCustomerList.Designer.vb">
+      <DependentUpon>XtraRptCustomerList.vb</DependentUpon>
+    </Compile>
+    <Compile Include="rpt\XtraRptCustomerList.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="rpt\XtraRptCustomerPaymentReceipt.Designer.vb">
+      <DependentUpon>XtraRptCustomerPaymentReceipt.vb</DependentUpon>
+    </Compile>
+    <Compile Include="rpt\XtraRptCustomerPaymentReceipt.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="rpt\XtraRptCustomerPayments.Designer.vb">
+      <DependentUpon>XtraRptCustomerPayments.vb</DependentUpon>
+    </Compile>
+    <Compile Include="rpt\XtraRptCustomerPayments.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="rpt\XtraRptCustomerPayments1.designer.vb">
+      <DependentUpon>XtraRptCustomerPayments1.vb</DependentUpon>
+    </Compile>
+    <Compile Include="rpt\XtraRptCustomerPayments1.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="rpt\XtraRptCustomerStatement.Designer.vb">
+      <DependentUpon>XtraRptCustomerStatement.vb</DependentUpon>
+    </Compile>
+    <Compile Include="rpt\XtraRptCustomerStatement.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="rpt\XtraRptExpenditure.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="rpt\XtraRptExpenditureSummary.Designer.vb">
+      <DependentUpon>XtraRptExpenditureSummary.vb</DependentUpon>
+    </Compile>
+    <Compile Include="rpt\XtraRptExpenditureSummary.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="rpt\XtraRptExpRequest.Designer.vb">
+      <DependentUpon>XtraRptExpRequest.vb</DependentUpon>
+    </Compile>
+    <Compile Include="rpt\XtraRptExpRequest.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="rpt\XtraRptFuelAttendantShortages.Designer.vb">
+      <DependentUpon>XtraRptFuelAttendantShortages.vb</DependentUpon>
+    </Compile>
+    <Compile Include="rpt\XtraRptFuelAttendantShortages.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="rpt\XtraRptFuelConsumption.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="rpt\XtraRptFuelCouponSales.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="rpt\XtraRptFuelCustomerSupply.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="rpt\XtraRptFuelCustomerSupply1.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="rpt\XtraRptFuelDailySales.Designer.vb">
+      <DependentUpon>XtraRptFuelDailySales.vb</DependentUpon>
+    </Compile>
+    <Compile Include="rpt\XtraRptFuelDailySales.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="rpt\XtraRptFuelDailyStock.Designer.vb">
+      <DependentUpon>XtraRptFuelDailyStock.vb</DependentUpon>
+    </Compile>
+    <Compile Include="rpt\XtraRptFuelDailyStock.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="rpt\XtraRptFuelEPaymentSales.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="rpt\XtraRptFuelGenelSales.Designer.vb">
+      <DependentUpon>XtraRptFuelGenelSales.vb</DependentUpon>
+    </Compile>
+    <Compile Include="rpt\XtraRptFuelGenelSales.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="rpt\XtraRptFuelGeneralSaleSummary.designer.vb">
+      <DependentUpon>XtraRptFuelGeneralSaleSummary.vb</DependentUpon>
+    </Compile>
+    <Compile Include="rpt\XtraRptFuelGeneralSaleSummary.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="rpt\XtraRptFuelSalesSummary.Designer.vb">
+      <DependentUpon>XtraRptFuelSalesSummary.vb</DependentUpon>
+    </Compile>
+    <Compile Include="rpt\XtraRptFuelSalesSummary.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="rpt\XtraRptFuelStockSummary.Designer.vb">
+      <DependentUpon>XtraRptFuelStockSummary.vb</DependentUpon>
+    </Compile>
+    <Compile Include="rpt\XtraRptFuelStockSummary.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="rpt\XtraRptFuelStockTransfer.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="rpt\XtraRptFuelTankReciept.Designer.vb">
+      <DependentUpon>XtraRptFuelTankReciept.vb</DependentUpon>
+    </Compile>
+    <Compile Include="rpt\XtraRptFuelTankReciept.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="rpt\XtraRptPOSCashSalesReceiptA5.Designer.vb">
+      <DependentUpon>XtraRptPOSCashSalesReceiptA5.vb</DependentUpon>
+    </Compile>
+    <Compile Include="rpt\XtraRptPOSCashSalesReceiptA5.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="rpt\XtraRptPOSCashSalesReceiptA5Reprint.designer.vb">
+      <DependentUpon>XtraRptPOSCashSalesReceiptA5Reprint.vb</DependentUpon>
+    </Compile>
+    <Compile Include="rpt\XtraRptPOSCashSalesReceiptA5Reprint.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="rpt\XtraRptPOSCashSalesReceiptPOS.Designer.vb">
+      <DependentUpon>XtraRptPOSCashSalesReceiptPOS.vb</DependentUpon>
+    </Compile>
+    <Compile Include="rpt\XtraRptPOSCashSalesReceiptPOS.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="rpt\XtraRptPOSCashSalesReceiptPOSReprint.designer.vb">
+      <DependentUpon>XtraRptPOSCashSalesReceiptPOSReprint.vb</DependentUpon>
+    </Compile>
+    <Compile Include="rpt\XtraRptPOSCashSalesReceiptPOSReprint.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="rpt\XtraRptPOSCustomerSupply.Designer.vb">
+      <DependentUpon>XtraRptPOSCustomerSupply.vb</DependentUpon>
+    </Compile>
+    <Compile Include="rpt\XtraRptPOSCustomerSupply.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="rpt\XtraRptPOSSupplierReceipt.Designer.vb">
+      <DependentUpon>XtraRptPOSSupplierReceipt.vb</DependentUpon>
+    </Compile>
+    <Compile Include="rpt\XtraRptPOSSupplierReceipt.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="rpt\XtraRptSupplierDebitCredit.Designer.vb">
+      <DependentUpon>XtraRptSupplierDebitCredit.vb</DependentUpon>
+    </Compile>
+    <Compile Include="rpt\XtraRptSupplierDebitCredit.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="rpt\XtraRptSupplierFuelReceipt.Designer.vb">
+      <DependentUpon>XtraRptSupplierFuelReceipt.vb</DependentUpon>
+    </Compile>
+    <Compile Include="rpt\XtraRptSupplierFuelReceipt.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="rpt\XtraRptSupplierList.Designer.vb">
+      <DependentUpon>XtraRptSupplierList.vb</DependentUpon>
+    </Compile>
+    <Compile Include="rpt\XtraRptSupplierList.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="rpt\XtraRptSupplierPayments.Designer.vb">
+      <DependentUpon>XtraRptSupplierPayments.vb</DependentUpon>
+    </Compile>
+    <Compile Include="rpt\XtraRptSupplierPayments.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="rpt\XtraRptSupplierStatement.Designer.vb">
+      <DependentUpon>XtraRptSupplierStatement.vb</DependentUpon>
+    </Compile>
+    <Compile Include="rpt\XtraRptSupplierStatement.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="sales\cashsales.aspx.designer.vb">
+      <DependentUpon>cashsales.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="sales\cashsales.aspx.vb">
+      <DependentUpon>cashsales.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="sales\sales.aspx.designer.vb">
+      <DependentUpon>sales.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="sales\sales.aspx.vb">
+      <DependentUpon>sales.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="sales\salesPend.aspx.designer.vb">
+      <DependentUpon>salesPend.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="sales\salesPend.aspx.vb">
+      <DependentUpon>salesPend.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="sales\salespendingInvoices.aspx.designer.vb">
+      <DependentUpon>salespendingInvoices.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="sales\salespendingInvoices.aspx.vb">
+      <DependentUpon>salespendingInvoices.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Scheduler.aspx.designer.vb">
+      <DependentUpon>Scheduler.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Scheduler.aspx.vb">
+      <DependentUpon>Scheduler.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="setup\accountSetup.aspx.designer.vb">
+      <DependentUpon>accountSetup.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="setup\accountSetup.aspx.vb">
+      <DependentUpon>accountSetup.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="setup\busInfoSetup.aspx.designer.vb">
+      <DependentUpon>busInfoSetup.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="setup\busInfoSetup.aspx.vb">
+      <DependentUpon>busInfoSetup.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="setup\expCat.aspx.designer.vb">
+      <DependentUpon>expCat.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="setup\expCat.aspx.vb">
+      <DependentUpon>expCat.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="setup\fuelSetup.aspx.designer.vb">
+      <DependentUpon>fuelSetup.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="setup\fuelSetup.aspx.vb">
+      <DependentUpon>fuelSetup.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="setup\siteSetup.aspx.designer.vb">
+      <DependentUpon>siteSetup.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="setup\siteSetup.aspx.vb">
+      <DependentUpon>siteSetup.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SignIn.aspx.designer.vb">
+      <DependentUpon>SignIn.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="SignIn.aspx.vb">
+      <DependentUpon>SignIn.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SignInMaster.Master.designer.vb">
+      <DependentUpon>SignInMaster.Master</DependentUpon>
+    </Compile>
+    <Compile Include="SignInMaster.Master.vb">
+      <DependentUpon>SignInMaster.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="suppliers\supDrCr.aspx.designer.vb">
+      <DependentUpon>supDrCr.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="suppliers\supDrCr.aspx.vb">
+      <DependentUpon>supDrCr.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="suppliers\supFuelRec.aspx.designer.vb">
+      <DependentUpon>supFuelRec.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="suppliers\supFuelRec.aspx.vb">
+      <DependentUpon>supFuelRec.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="suppliers\supList.aspx.designer.vb">
+      <DependentUpon>supList.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="suppliers\supList.aspx.vb">
+      <DependentUpon>supList.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="suppliers\supPayment.aspx.designer.vb">
+      <DependentUpon>supPayment.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="suppliers\supPayment.aspx.vb">
+      <DependentUpon>supPayment.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="suppliers\supReceipt.aspx.designer.vb">
+      <DependentUpon>supReceipt.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="suppliers\supReceipt.aspx.vb">
+      <DependentUpon>supReceipt.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="users\userGroupRoles.aspx.designer.vb">
+      <DependentUpon>userGroupRoles.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="users\userGroupRoles.aspx.vb">
+      <DependentUpon>userGroupRoles.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="users\userProfile.aspx.designer.vb">
+      <DependentUpon>userProfile.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="users\userProfile.aspx.vb">
+      <DependentUpon>userProfile.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="users\users.aspx.designer.vb">
+      <DependentUpon>users.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="users\users.aspx.vb">
+      <DependentUpon>users.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WebForm1.aspx.designer.vb">
+      <DependentUpon>WebForm1.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="WebForm1.aspx.vb">
+      <DependentUpon>WebForm1.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="My Project\licenses.licx" />
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="rpt\rptItemList.resx">
+      <DependentUpon>rptItemList.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="rpt\XtraRptAccountDeposit.resx">
+      <DependentUpon>XtraRptAccountDeposit.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="rpt\XtraRptAccountDepositSales.resx">
+      <DependentUpon>XtraRptAccountDepositSales.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="rpt\XtraRptAccountList.resx">
+      <DependentUpon>XtraRptAccountList.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="rpt\XtraRptAccountsDebitCredit.resx">
+      <DependentUpon>XtraRptAccountsDebitCredit.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="rpt\XtraRptAccountStatement.resx">
+      <DependentUpon>XtraRptAccountStatement.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="rpt\XtraRptAccountTransfer.resx">
+      <DependentUpon>XtraRptAccountTransfer.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="rpt\XtraRptAccountTrantractions.resx">
+      <DependentUpon>XtraRptAccountTrantractions.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="rpt\XtraRptAttendantAccountsDebitCredit.resx">
+      <DependentUpon>XtraRptAttendantAccountsDebitCredit.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="rpt\XtraRptAttendantDebitCreditReceipt.resx">
+      <DependentUpon>XtraRptAttendantDebitCreditReceipt.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="rpt\XtraRptAttendantDetails.resx">
+      <DependentUpon>XtraRptAttendantDetails.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="rpt\XtraRptAttendantPaymentReceipt.resx">
+      <DependentUpon>XtraRptAttendantPaymentReceipt.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="rpt\XtraRptAttendantPayments.resx">
+      <DependentUpon>XtraRptAttendantPayments.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="rpt\XtraRptCashSalesWayBill.resx">
+      <DependentUpon>XtraRptCashSalesWayBill.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="rpt\XtraRptCustomerAccountsDebitCredit.resx">
+      <DependentUpon>XtraRptCustomerAccountsDebitCredit.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="rpt\XtraRptCustomerBalance.resx">
+      <DependentUpon>XtraRptCustomerBalance.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="rpt\XtraRptCustomerDebitCreditReceipt.resx">
+      <DependentUpon>XtraRptCustomerDebitCreditReceipt.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="rpt\XtraRptCustomerDeposittA5.resx">
+      <DependentUpon>XtraRptCustomerDeposittA5.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="rpt\XtraRptCustomerList.resx">
+      <DependentUpon>XtraRptCustomerList.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="rpt\XtraRptCustomerPaymentReceipt.resx">
+      <DependentUpon>XtraRptCustomerPaymentReceipt.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="rpt\XtraRptCustomerPayments.resx">
+      <DependentUpon>XtraRptCustomerPayments.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="rpt\XtraRptCustomerPayments1.resx">
+      <DependentUpon>XtraRptCustomerPayments1.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="rpt\XtraRptCustomerStatement.resx">
+      <DependentUpon>XtraRptCustomerStatement.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="rpt\XtraRptExpenditure.resx">
+      <DependentUpon>XtraRptExpenditure.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="rpt\XtraRptExpenditureSummary.resx">
+      <DependentUpon>XtraRptExpenditureSummary.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="rpt\XtraRptExpRequest.resx">
+      <DependentUpon>XtraRptExpRequest.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="rpt\XtraRptFuelAttendantShortages.resx">
+      <DependentUpon>XtraRptFuelAttendantShortages.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="rpt\XtraRptFuelConsumption.resx">
+      <DependentUpon>XtraRptFuelConsumption.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="rpt\XtraRptFuelCouponSales.resx">
+      <DependentUpon>XtraRptFuelCouponSales.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="rpt\XtraRptFuelCustomerSupply.resx">
+      <DependentUpon>XtraRptFuelCustomerSupply.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="rpt\XtraRptFuelCustomerSupply1.resx">
+      <DependentUpon>XtraRptFuelCustomerSupply1.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="rpt\XtraRptFuelDailySales.resx">
+      <DependentUpon>XtraRptFuelDailySales.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="rpt\XtraRptFuelDailyStock.resx">
+      <DependentUpon>XtraRptFuelDailyStock.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="rpt\XtraRptFuelEPaymentSales.resx">
+      <DependentUpon>XtraRptFuelEPaymentSales.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="rpt\XtraRptFuelGenelSales.resx">
+      <DependentUpon>XtraRptFuelGenelSales.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="rpt\XtraRptFuelGeneralSaleSummary.resx">
+      <DependentUpon>XtraRptFuelGeneralSaleSummary.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="rpt\XtraRptFuelSalesSummary.resx">
+      <DependentUpon>XtraRptFuelSalesSummary.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="rpt\XtraRptFuelStockSummary.resx">
+      <DependentUpon>XtraRptFuelStockSummary.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="rpt\XtraRptFuelStockTransfer.resx">
+      <DependentUpon>XtraRptFuelStockTransfer.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="rpt\XtraRptFuelTankReciept.resx">
+      <DependentUpon>XtraRptFuelTankReciept.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="rpt\XtraRptPOSCashSalesReceiptA5.resx">
+      <DependentUpon>XtraRptPOSCashSalesReceiptA5.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="rpt\XtraRptPOSCashSalesReceiptA5Reprint.resx">
+      <DependentUpon>XtraRptPOSCashSalesReceiptA5Reprint.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="rpt\XtraRptPOSCashSalesReceiptPOS.resx">
+      <DependentUpon>XtraRptPOSCashSalesReceiptPOS.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="rpt\XtraRptPOSCashSalesReceiptPOSReprint.resx">
+      <DependentUpon>XtraRptPOSCashSalesReceiptPOSReprint.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="rpt\XtraRptPOSCustomerSupply.resx">
+      <DependentUpon>XtraRptPOSCustomerSupply.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="rpt\XtraRptPOSSupplierReceipt.resx">
+      <DependentUpon>XtraRptPOSSupplierReceipt.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="rpt\XtraRptSupplierDebitCredit.resx">
+      <DependentUpon>XtraRptSupplierDebitCredit.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="rpt\XtraRptSupplierFuelReceipt.resx">
+      <DependentUpon>XtraRptSupplierFuelReceipt.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="rpt\XtraRptSupplierList.resx">
+      <DependentUpon>XtraRptSupplierList.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="rpt\XtraRptSupplierPayments.resx">
+      <DependentUpon>XtraRptSupplierPayments.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="rpt\XtraRptSupplierStatement.resx">
+      <DependentUpon>XtraRptSupplierStatement.vb</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Account\AccountDeposit.aspx" />
+    <Content Include="Account\AccountDepositSales.aspx" />
+    <Content Include="Account\AccountDrCr.aspx" />
+    <Content Include="Account\AccountTranfers.aspx" />
+    <Content Include="Account\AccountTransferSales.aspx" />
+    <Content Include="Account\Expenditure.aspx" />
+    <Content Include="Account\Register.aspx" />
+    <Content Include="App_Data\ApplicationMenuDataSource.sitemap" />
+    <Content Include="App_Data\Article.html" />
+    <Content Include="App_Data\ArticleContents.xml" />
+    <Content Include="App_Data\Overview.html" />
+    <Content Include="App_Data\OverviewContents.xml" />
+    <Content Include="Article.aspx" />
+    <Content Include="Content\Assets\css\bootstrap.min.css" />
+    <Content Include="Content\Assets\css\style.css" />
+    <Content Include="Content\Assets\img\about-1.jpg" />
+    <Content Include="Content\Assets\img\about-2.jpg" />
+    <Content Include="Content\Assets\img\hero-bg.jpg" />
+    <Content Include="Content\Assets\img\hero-slider-1.jpg" />
+    <Content Include="Content\Assets\img\hero-slider-2.jpg" />
+    <Content Include="Content\Assets\img\hero-slider-3.jpg" />
+    <Content Include="Content\Assets\img\newsletter.jpg" />
+    <Content Include="Content\Assets\img\project-1.jpg" />
+    <Content Include="Content\Assets\img\project-2.jpg" />
+    <Content Include="Content\Assets\img\project-3.jpg" />
+    <Content Include="Content\Assets\img\project-4.jpg" />
+    <Content Include="Content\Assets\img\project-5.jpg" />
+    <Content Include="Content\Assets\img\project-6.jpg" />
+    <Content Include="Content\Assets\img\service-1.jpg" />
+    <Content Include="Content\Assets\img\service-2.jpg" />
+    <Content Include="Content\Assets\img\service-3.jpg" />
+    <Content Include="Content\Assets\img\service-4.jpg" />
+    <Content Include="Content\Assets\img\team-1.jpg" />
+    <Content Include="Content\Assets\img\team-2.jpg" />
+    <Content Include="Content\Assets\img\team-3.jpg" />
+    <Content Include="Content\Assets\img\team-4.jpg" />
+    <Content Include="Content\Assets\img\testimonial-1.jpg" />
+    <Content Include="Content\Assets\img\testimonial-2.jpg" />
+    <Content Include="Content\Assets\img\testimonial-3.jpg" />
+    <Content Include="Content\Assets\js\main.js" />
+    <Content Include="Content\Assets\lib\animate\animate.css" />
+    <Content Include="Content\Assets\lib\animate\animate.min.css" />
+    <Content Include="Content\Assets\lib\counterup\counterup.min.js" />
+    <Content Include="Content\Assets\lib\easing\easing.js" />
+    <Content Include="Content\Assets\lib\easing\easing.min.js" />
+    <Content Include="Content\Assets\lib\owlcarousel\assets\ajax-loader.gif" />
+    <Content Include="Content\Assets\lib\owlcarousel\assets\owl.carousel.css" />
+    <Content Include="Content\Assets\lib\owlcarousel\assets\owl.carousel.min.css" />
+    <Content Include="Content\Assets\lib\owlcarousel\assets\owl.theme.default.css" />
+    <Content Include="Content\Assets\lib\owlcarousel\assets\owl.theme.default.min.css" />
+    <Content Include="Content\Assets\lib\owlcarousel\assets\owl.theme.green.css" />
+    <Content Include="Content\Assets\lib\owlcarousel\assets\owl.theme.green.min.css" />
+    <Content Include="Content\Assets\lib\owlcarousel\assets\owl.video.play.png" />
+    <Content Include="Content\Assets\lib\owlcarousel\owl.carousel.js" />
+    <Content Include="Content\Assets\lib\owlcarousel\owl.carousel.min.js" />
+    <Content Include="Content\Assets\lib\waypoints\waypoints.min.js" />
+    <Content Include="Content\Assets\lib\wow\wow.js" />
+    <Content Include="Content\Assets\lib\wow\wow.min.js" />
+    <Content Include="Content\Content.css" />
+    <Content Include="Content\GridView.css" />
+    <Content Include="Content\GridView.js" />
+    <Content Include="Content\Images\adaptive-menu.svg" />
+    <Content Include="Content\Images\add.svg" />
+    <Content Include="Content\Images\application.svg" />
+    <Content Include="Content\Images\Article-white.svg" />
+    <Content Include="Content\Images\Article.svg" />
+    <Content Include="Content\Images\back.svg" />
+    <Content Include="Content\Images\delete.svg" />
+    <Content Include="Content\Images\double-close.svg" />
+    <Content Include="Content\Images\double.svg" />
+    <Content Include="Content\Images\edit.svg" />
+    <Content Include="Content\Images\export.svg" />
+    <Content Include="Content\Images\eye-button-hide.svg" />
+    <Content Include="Content\Images\eye-button.svg" />
+    <Content Include="Content\Images\GridView-white.svg" />
+    <Content Include="Content\Images\GridView.svg" />
+    <Content Include="Content\Images\Home-white.svg" />
+    <Content Include="Content\Images\Home.svg" />
+    <Content Include="Content\Images\image-sample.png" />
+    <Content Include="Content\Images\kind1-white.svg" />
+    <Content Include="Content\Images\kind1.svg" />
+    <Content Include="Content\Images\kind2-white.svg" />
+    <Content Include="Content\Images\kind2.svg" />
+    <Content Include="Content\Images\logo-small.svg" />
+    <Content Include="Content\Images\logo.svg" />
+    <Content Include="Content\Images\menu.svg" />
+    <Content Include="Content\Images\Overview\article.png" />
+    <Content Include="Content\Images\Overview\demo.png" />
+    <Content Include="Content\Images\Overview\grid.png" />
+    <Content Include="Content\Images\Overview\login.gif" />
+    <Content Include="Content\Images\Overview\login.png" />
+    <Content Include="Content\Images\Overview\menu.gif" />
+    <Content Include="Content\Images\Overview\scheduler.png" />
+    <Content Include="Content\Images\Overview\sidebar.gif" />
+    <Content Include="Content\Images\Overview\sticky-footer.gif" />
+    <Content Include="Content\Images\Overview\toolbar.gif" />
+    <Content Include="Content\Images\print.svg" />
+    <Content Include="Content\Images\priority1-white.svg" />
+    <Content Include="Content\Images\priority1.svg" />
+    <Content Include="Content\Images\priority2-white.svg" />
+    <Content Include="Content\Images\priority2.svg" />
+    <Content Include="Content\Images\priority3-white.svg" />
+    <Content Include="Content\Images\priority3.svg" />
+    <Content Include="Content\Images\Scheduler-white.svg" />
+    <Content Include="Content\Images\Scheduler.svg" />
+    <Content Include="Content\Images\search-selected.svg" />
+    <Content Include="Content\Images\search.svg" />
+    <Content Include="Content\Images\sign-out.svg" />
+    <Content Include="Content\Images\user.svg" />
+    <Content Include="Content\Layout.css" />
+    <Content Include="Content\myjs\jquery-3.6.0.js" />
+    <Content Include="Content\myjs\moment.js" />
+    <Content Include="Content\myjs\numeral.js" />
+    <Content Include="Content\Photo\Alberto_Alonso.jpg" />
+    <Content Include="Content\Photo\Alfredo_Gomez.jpg" />
+    <Content Include="Content\Photo\Andrew_Lee.jpg" />
+    <Content Include="Content\Photo\Angela_Murphy.jpg" />
+    <Content Include="Content\Photo\Clarence_Nath.jpg" />
+    <Content Include="Content\Photo\Colin_He.jpg" />
+    <Content Include="Content\Photo\Connor_Jenkins.jpg" />
+    <Content Include="Content\Photo\Connor_Lopez.jpg" />
+    <Content Include="Content\Photo\Destiny_Clark.jpg" />
+    <Content Include="Content\Photo\Diana_Martin.jpg" />
+    <Content Include="Content\Photo\Gary_Rubio.jpg" />
+    <Content Include="Content\Photo\Heidi_Lopez.jpg" />
+    <Content Include="Content\Photo\Jesse_Gonzalez.jpg" />
+    <Content Include="Content\Photo\Jessie_She.jpg" />
+    <Content Include="Content\Photo\Julia_Bell.jpg" />
+    <Content Include="Content\Photo\Julia_Evans.jpg" />
+    <Content Include="Content\Photo\Katelyn_Lopez.jpg" />
+    <Content Include="Content\Photo\Kevin_Collins.jpg" />
+    <Content Include="Content\Photo\Logan_Hernandez.jpg" />
+    <Content Include="Content\Photo\Maria_Hernandez.jpg" />
+    <Content Include="Content\Photo\Martha_Gao.jpg" />
+    <Content Include="Content\Photo\Megan_Sanchez.jpg" />
+    <Content Include="Content\Photo\Miguel_Jones.jpg" />
+    <Content Include="Content\Photo\Naomi_Moreno.jpg" />
+    <Content Include="Content\Photo\Nathan_Bryant.jpg" />
+    <Content Include="Content\Photo\Rafael_Raje.jpg" />
+    <Content Include="Content\Photo\Rebekah_Raman.jpg" />
+    <Content Include="Content\Photo\Shannon_Sanz.jpg" />
+    <Content Include="Content\Photo\User.png" />
+    <Content Include="Content\Photo\Xavier_Richardson.jpg" />
+    <Content Include="Content\Scheduler.css" />
+    <Content Include="Content\Scheduler.js" />
+    <Content Include="Content\Script.js" />
+    <Content Include="Content\SignInRegister.css" />
+    <Content Include="Content\SignInRegister.js" />
+    <Content Include="customers\cusFuelSales.aspx" />
+    <Content Include="customers\customerDeposit.aspx" />
+    <Content Include="customers\customerDrCr.aspx" />
+    <Content Include="customers\customerPay.aspx" />
+    <Content Include="customers\customers.aspx" />
+    <Content Include="Default.aspx" />
+    <Content Include="employeePics\0.jpg" />
+    <Content Include="employeePics\1.jpg" />
+    <Content Include="employeePics\10.jpg" />
+    <Content Include="employeePics\1028.jpg" />
+    <Content Include="employeePics\1029.jpg" />
+    <Content Include="employeePics\11.jpg" />
+    <Content Include="employeePics\12.jpg" />
+    <Content Include="employeePics\13.jpg" />
+    <Content Include="employeePics\14.jpg" />
+    <Content Include="employeePics\15.jpg" />
+    <Content Include="employeePics\16.jpg" />
+    <Content Include="employeePics\17.jpg" />
+    <Content Include="employeePics\18.jpg" />
+    <Content Include="employeePics\19.jpg" />
+    <Content Include="employeePics\2.jpg" />
+    <Content Include="employeePics\20.jpg" />
+    <Content Include="employeePics\21.jpg" />
+    <Content Include="employeePics\22.jpg" />
+    <Content Include="employeePics\23.jpg" />
+    <Content Include="employeePics\24.jpg" />
+    <Content Include="employeePics\25.jpg" />
+    <Content Include="employeePics\26.jpg" />
+    <Content Include="employeePics\27.jpg" />
+    <Content Include="employeePics\28.jpg" />
+    <Content Include="employeePics\29.jpg" />
+    <Content Include="employeePics\3.jpg" />
+    <Content Include="employeePics\30.jpg" />
+    <Content Include="employeePics\31.jpg" />
+    <Content Include="employeePics\33.jpg" />
+    <Content Include="employeePics\35.jpg" />
+    <Content Include="employeePics\36.jpg" />
+    <Content Include="employeePics\4.jpg" />
+    <Content Include="employeePics\40.jpg" />
+    <Content Include="employeePics\5.jpg" />
+    <Content Include="employeePics\6.jpg" />
+    <Content Include="employeePics\7.jpg" />
+    <Content Include="employeePics\8.jpg" />
+    <Content Include="employeePics\9.jpg" />
+    <Content Include="employees\attendAccDrCr.aspx" />
+    <Content Include="employees\attendPay.aspx" />
+    <Content Include="employees\employees.aspx" />
+    <Content Include="employees\FuelAttendShort.aspx" />
+    <Content Include="fuel\fuelConsume.aspx" />
+    <Content Include="fuel\fuelCouponSales.aspx" />
+    <Content Include="fuel\fuelESales.aspx" />
+    <Content Include="fuel\fuelsales.aspx" />
+    <Content Include="fuel\fuelSalesPics\0.jpg" />
+    <Content Include="fuel\fuelSalesPics\027554395146447996.jpg" />
+    <Content Include="fuel\fuelSalesPics\034934819863809463.jpg" />
+    <Content Include="fuel\fuelSalesPics\06013541970650927.jpg" />
+    <Content Include="fuel\fuelSalesPics\20291907858891369734743.jpg" />
+    <Content Include="fuel\fuelSalesPics\2878780281580416625458.jpg" />
+    <Content Include="fuel\fuelSalesPics\3223037459106667624494.jpg" />
+    <Content Include="fuel\fuelSalesPics\33116869453441756541392.jpg" />
+    <Content Include="fuel\fuelSalesPics\42975366976612884136992.jpg" />
+    <Content Include="fuel\fuelSalesPics\46692523664186021227121.jpg" />
+    <Content Include="fuel\fuelSalesPics\48310681556868684325118.jpg" />
+    <Content Include="fuel\fuelSalesPics\55740739619145514337262.jpg" />
+    <Content Include="fuel\fuelSalesPics\60439992245864119541662.jpg" />
+    <Content Include="fuel\fuelSalesPics\6176005570905285726818.jpg" />
+    <Content Include="fuel\fuelSalesPics\6399832067545425229862.jpg" />
+    <Content Include="fuel\fuelSalesPics\64522321957173907225915.jpg" />
+    <Content Include="fuel\fuelSalesPics\76994160718048997641371.jpg" />
+    <Content Include="fuel\fuelSalesPics\83235672689758088837038.jpg" />
+    <Content Include="fuel\fuelSalesPics\88898289230930753637858.jpg" />
+    <Content Include="fuel\fuelSalesPics\92094206284589230227754.jpg" />
+    <Content Include="fuel\fuelstock.aspx" />
+    <Content Include="fuel\fuelstockPics\0.jpg" />
+    <Content Include="fuel\fuelstockPics\67667408985489704248142.jpg" />
+    <Content Include="fuel\fuelstockPics\88399892499996299237210.jpg" />
+    <Content Include="fuel\fuelstockPics\9774695638816196342389.jpg" />
+    <Content Include="fuel\fuelTankRec.aspx" />
+    <Content Include="fuel\fuelTransfer.aspx" />
+    <Content Include="Global.asax" />
+    <Content Include="GridView.aspx" />
+    <Content Include="GridViewDetailsPage.aspx" />
+    <Content Include="imageTemp\0.jpg" />
+    <Content Include="img\add-100.png" />
+    <Content Include="img\add-20.png" />
+    <Content Include="img\add-blue.png" />
+    <Content Include="img\add-dollar-20.png" />
+    <Content Include="img\add-user-20.png" />
+    <Content Include="img\applogo.png" />
+    <Content Include="img\applogo1.png" />
+    <Content Include="img\change-user-20.png" />
+    <Content Include="img\close-white.png" />
+    <Content Include="img\Delete.png" />
+    <Content Include="img\edit-20.png" />
+    <Content Include="img\emptyImage.png" />
+    <Content Include="img\logo.jpg" />
+    <Content Include="img\LOGO.png" />
+    <Content Include="img\logo1.png" />
+    <Content Include="img\print-20.png" />
+    <Content Include="img\remove-20.png" />
+    <Content Include="img\save-30.png" />
+    <Content Include="img\user-groups-20.png" />
+    <Content Include="img\user-profile.gif" />
+    <Content Include="img\users-roles-20.png" />
+    <Content Include="img\view-100.jpg" />
+    <Content Include="img\view-100.png" />
+    <Content Include="img\view-20.png" />
+    <Content Include="img\view-bule.png" />
+    <Content Include="img\view-green.png" />
+    <Content Include="inventory\invOpenStock.aspx" />
+    <Content Include="inventory\ItemCategory.aspx" />
+    <Content Include="inventory\items.aspx" />
+    <Content Include="inventory\stockTransfer.aspx" />
+    <Content Include="reports\accountRpts.aspx" />
+    <Content Include="reports\attendRpt.aspx" />
+    <Content Include="reports\cusRpts.aspx" />
+    <Content Include="reports\expRpts.aspx" />
+    <Content Include="reports\fuelRpts.aspx" />
+    <Content Include="reports\genRpts.aspx" />
+    <Content Include="reports\invRpts.aspx" />
+    <Content Include="reports\SupRpts.aspx" />
+    <Content Include="sales\cashsales.aspx" />
+    <Content Include="sales\sales.aspx" />
+    <Content Include="sales\salesPend.aspx" />
+    <Content Include="sales\salespendingInvoices.aspx" />
+    <Content Include="Scheduler.aspx" />
+    <Content Include="WebForm1.aspx" />
+    <Content Include="Content\Assets\lib\owlcarousel\LICENSE" />
+    <Content Include="Content\Assets\lib\waypoints\links.php" />
+    <Content Include="Content\Assets\scss\bootstrap.scss" />
+    <Content Include="Content\Assets\scss\bootstrap\scss\bootstrap-grid.scss" />
+    <Content Include="Content\Assets\scss\bootstrap\scss\bootstrap-reboot.scss" />
+    <Content Include="Content\Assets\scss\bootstrap\scss\bootstrap-utilities.scss" />
+    <Content Include="Content\Assets\scss\bootstrap\scss\bootstrap.scss" />
+    <Content Include="Content\Assets\scss\bootstrap\scss\forms\_floating-labels.scss" />
+    <Content Include="Content\Assets\scss\bootstrap\scss\forms\_form-check.scss" />
+    <Content Include="Content\Assets\scss\bootstrap\scss\forms\_form-control.scss" />
+    <Content Include="Content\Assets\scss\bootstrap\scss\forms\_form-range.scss" />
+    <Content Include="Content\Assets\scss\bootstrap\scss\forms\_form-select.scss" />
+    <Content Include="Content\Assets\scss\bootstrap\scss\forms\_form-text.scss" />
+    <Content Include="Content\Assets\scss\bootstrap\scss\forms\_input-group.scss" />
+    <Content Include="Content\Assets\scss\bootstrap\scss\forms\_labels.scss" />
+    <Content Include="Content\Assets\scss\bootstrap\scss\forms\_validation.scss" />
+    <Content Include="Content\Assets\scss\bootstrap\scss\helpers\_clearfix.scss" />
+    <Content Include="Content\Assets\scss\bootstrap\scss\helpers\_colored-links.scss" />
+    <Content Include="Content\Assets\scss\bootstrap\scss\helpers\_position.scss" />
+    <Content Include="Content\Assets\scss\bootstrap\scss\helpers\_ratio.scss" />
+    <Content Include="Content\Assets\scss\bootstrap\scss\helpers\_stretched-link.scss" />
+    <Content Include="Content\Assets\scss\bootstrap\scss\helpers\_text-truncation.scss" />
+    <Content Include="Content\Assets\scss\bootstrap\scss\helpers\_visually-hidden.scss" />
+    <Content Include="Content\Assets\scss\bootstrap\scss\mixins\_alert.scss" />
+    <Content Include="Content\Assets\scss\bootstrap\scss\mixins\_border-radius.scss" />
+    <Content Include="Content\Assets\scss\bootstrap\scss\mixins\_box-shadow.scss" />
+    <Content Include="Content\Assets\scss\bootstrap\scss\mixins\_breakpoints.scss" />
+    <Content Include="Content\Assets\scss\bootstrap\scss\mixins\_buttons.scss" />
+    <Content Include="Content\Assets\scss\bootstrap\scss\mixins\_caret.scss" />
+    <Content Include="Content\Assets\scss\bootstrap\scss\mixins\_clearfix.scss" />
+    <Content Include="Content\Assets\scss\bootstrap\scss\mixins\_color-scheme.scss" />
+    <Content Include="Content\Assets\scss\bootstrap\scss\mixins\_container.scss" />
+    <Content Include="Content\Assets\scss\bootstrap\scss\mixins\_deprecate.scss" />
+    <Content Include="Content\Assets\scss\bootstrap\scss\mixins\_forms.scss" />
+    <Content Include="Content\Assets\scss\bootstrap\scss\mixins\_gradients.scss" />
+    <Content Include="Content\Assets\scss\bootstrap\scss\mixins\_grid.scss" />
+    <Content Include="Content\Assets\scss\bootstrap\scss\mixins\_image.scss" />
+    <Content Include="Content\Assets\scss\bootstrap\scss\mixins\_list-group.scss" />
+    <Content Include="Content\Assets\scss\bootstrap\scss\mixins\_lists.scss" />
+    <Content Include="Content\Assets\scss\bootstrap\scss\mixins\_pagination.scss" />
+    <Content Include="Content\Assets\scss\bootstrap\scss\mixins\_reset-text.scss" />
+    <Content Include="Content\Assets\scss\bootstrap\scss\mixins\_resize.scss" />
+    <Content Include="Content\Assets\scss\bootstrap\scss\mixins\_table-variants.scss" />
+    <Content Include="Content\Assets\scss\bootstrap\scss\mixins\_text-truncate.scss" />
+    <Content Include="Content\Assets\scss\bootstrap\scss\mixins\_transition.scss" />
+    <Content Include="Content\Assets\scss\bootstrap\scss\mixins\_utilities.scss" />
+    <Content Include="Content\Assets\scss\bootstrap\scss\mixins\_visually-hidden.scss" />
+    <Content Include="Content\Assets\scss\bootstrap\scss\utilities\_api.scss" />
+    <Content Include="Content\Assets\scss\bootstrap\scss\vendor\_rfs.scss" />
+    <Content Include="Content\Assets\scss\bootstrap\scss\_accordion.scss" />
+    <Content Include="Content\Assets\scss\bootstrap\scss\_alert.scss" />
+    <Content Include="Content\Assets\scss\bootstrap\scss\_badge.scss" />
+    <Content Include="Content\Assets\scss\bootstrap\scss\_breadcrumb.scss" />
+    <Content Include="Content\Assets\scss\bootstrap\scss\_button-group.scss" />
+    <Content Include="Content\Assets\scss\bootstrap\scss\_buttons.scss" />
+    <Content Include="Content\Assets\scss\bootstrap\scss\_card.scss" />
+    <Content Include="Content\Assets\scss\bootstrap\scss\_carousel.scss" />
+    <Content Include="Content\Assets\scss\bootstrap\scss\_close.scss" />
+    <Content Include="Content\Assets\scss\bootstrap\scss\_containers.scss" />
+    <Content Include="Content\Assets\scss\bootstrap\scss\_dropdown.scss" />
+    <Content Include="Content\Assets\scss\bootstrap\scss\_forms.scss" />
+    <Content Include="Content\Assets\scss\bootstrap\scss\_functions.scss" />
+    <Content Include="Content\Assets\scss\bootstrap\scss\_grid.scss" />
+    <Content Include="Content\Assets\scss\bootstrap\scss\_helpers.scss" />
+    <Content Include="Content\Assets\scss\bootstrap\scss\_images.scss" />
+    <Content Include="Content\Assets\scss\bootstrap\scss\_list-group.scss" />
+    <Content Include="Content\Assets\scss\bootstrap\scss\_mixins.scss" />
+    <Content Include="Content\Assets\scss\bootstrap\scss\_modal.scss" />
+    <Content Include="Content\Assets\scss\bootstrap\scss\_nav.scss" />
+    <Content Include="Content\Assets\scss\bootstrap\scss\_navbar.scss" />
+    <Content Include="Content\Assets\scss\bootstrap\scss\_offcanvas.scss" />
+    <Content Include="Content\Assets\scss\bootstrap\scss\_pagination.scss" />
+    <Content Include="Content\Assets\scss\bootstrap\scss\_popover.scss" />
+    <Content Include="Content\Assets\scss\bootstrap\scss\_progress.scss" />
+    <Content Include="Content\Assets\scss\bootstrap\scss\_reboot.scss" />
+    <Content Include="Content\Assets\scss\bootstrap\scss\_root.scss" />
+    <Content Include="Content\Assets\scss\bootstrap\scss\_spinners.scss" />
+    <Content Include="Content\Assets\scss\bootstrap\scss\_tables.scss" />
+    <Content Include="Content\Assets\scss\bootstrap\scss\_toasts.scss" />
+    <Content Include="Content\Assets\scss\bootstrap\scss\_tooltip.scss" />
+    <Content Include="Content\Assets\scss\bootstrap\scss\_transitions.scss" />
+    <Content Include="Content\Assets\scss\bootstrap\scss\_type.scss" />
+    <Content Include="Content\Assets\scss\bootstrap\scss\_utilities.scss" />
+    <Content Include="Content\Assets\scss\bootstrap\scss\_variables.scss" />
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+    <Content Include="Root.master" />
+    <Content Include="setup\accountSetup.aspx" />
+    <Content Include="setup\busInfoSetup.aspx" />
+    <Content Include="setup\expCat.aspx" />
+    <Content Include="setup\fuelSetup.aspx" />
+    <Content Include="setup\siteSetup.aspx" />
+    <Content Include="SignIn.aspx" />
+    <Content Include="smsAPI\Zenoph.Notify.dll" />
+    <Content Include="suppliers\supDrCr.aspx" />
+    <Content Include="suppliers\supFuelRec.aspx" />
+    <Content Include="suppliers\supList.aspx" />
+    <Content Include="suppliers\supPayment.aspx" />
+    <Content Include="suppliers\supReceipt.aspx" />
+    <Content Include="users\userGroupRoles.aspx" />
+    <Content Include="users\userpics\0.jpg" />
+    <Content Include="users\userpics\1.jpg" />
+    <Content Include="users\userpics\2.jpg" />
+    <Content Include="users\userpics\3.jpg" />
+    <Content Include="users\userpics\4.jpg" />
+    <Content Include="users\userpics\5.jpg" />
+    <Content Include="users\userpics\6.jpg" />
+    <Content Include="users\userpics\8.jpg" />
+    <Content Include="users\userProfile.aspx" />
+    <Content Include="users\users.aspx" />
+    <Content Include="Web.config" />
+    <Content Include="SignInMaster.Master" />
+    <None Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <None Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <!--<Content Include="Site.Master" />-->
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Content\Assets\mycss\" />
+  </ItemGroup>
+  <!--<ItemGroup>
+    <Folder Include="App_Data\" />
+  </ItemGroup>-->
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionExplicit>On</OptionExplicit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionCompare>Binary</OptionCompare>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionStrict>Off</OptionStrict>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionInfer>On</OptionInfer>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.VisualBasic.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>2287</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost:2287/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it.
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
